@@ -1,0 +1,23 @@
+{
+  "skill_name": "jaseci",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a Jac program that models a small social network: users follow each other, and a walker finds everyone within two hops of a given user. Seed a few users and print the result.",
+      "expected_output": "A .jac file that passes `jac check` with no errors and prints the friends-of-friends set when run with `jac run`.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "for our hackathon i need a jaseci backend for a study-group app: create groups, join a group, list my groups. REST endpoints please, and something i can demo with curl",
+      "expected_output": "jac.toml + main.jac using walker:pub/def:pub, passes `jac check`, serves via `jac start main.jac --no_client`, plus curl commands that return ok:true.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Add an AI feature in Jac: given a free-text recipe, extract a typed Recipe object (name, ingredients with quantities, steps, est. minutes). Include a test that runs without an API key.",
+      "expected_output": "Uses `by llm()` with an obj return type and sem strings; includes a MockLLM-backed `test` block; `jac test` passes.",
+      "files": []
+    }
+  ]
+}
